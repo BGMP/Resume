@@ -4,7 +4,7 @@ My single-page, general use resume, written in English and Spanish.
 ## Attribution
 This resume has been based on [this](https://github.com/sb2nov/resume) template. The original licence can be found in the docs directory.
 
-### Preview
+All the data is owned by José Benavente.
 
-![Resume Screenshot](/resume_preview.png)
-
+## Preview
+![Resume Screenshot](/docs/preview.png)
