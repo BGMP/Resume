@@ -1,0 +1,179 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://bgm.dev/}{\Large José Benavente}} & Email : \href{mailto:jose@bgm.dev}{jose@bgm.dev}\\
+  \href{https://bgm.dev/}{https://bgm.dev/} & \includegraphics[width=3mm, height=3mm]{img/github-logo.png} \href{https://github.com/BGMP}{BGMP}\\ & \includegraphics[width=3mm, height=3mm]{img/gitlab-logo.png} \href{https://gitlab.com/BGMP}{BGMP}\\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experiencia}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Re-Volt: OpenGL (\textnormal{\url{https://rvgl.org/}})}{}
+      {Desarrollador de Software, Miembro del Equipo Core de Mantenedores}{Enero 2022 ---}
+      \resumeItemListStart
+        \resumeItem{C/C++}{Implementar correcciones de sincronización al aspecto multijugador del juego, así como también resolver errores generales reportados por su comunidad.}
+        \resumeItem{GitHub/GitLab}{Trabajar con un equipo de desarrolladores de todas partes del mundo de manera remota para lanzar actualizaciones del juego, además de colaborar con el versionado de la base de código.}
+        \resumeItem{mdBook}{Escribir documentación para las nuevas versiones del juego.}
+        \item{Interactuar con la comunidad del juego de más de 5000 jugadores para así resolver bugs y agregar nuevas funcionalidades.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Re-Volt America (\textnormal{\url{https://rva.lat/}})}{}
+      {Líder de Desarrollo de Software}{Mayo 2021 ---}
+      \resumeItemListStart
+        \resumeItem{Ruby on Rails}{Diseñé y desarrollé una aplicación web desde cero para la comunidad de Re-Volt America, la cual sirve a miles de usuarios al mes.}
+        \resumeItem{Capistrano}{Implementé flujos de trabajo con Capistrano y GitHub Actions para llevar la aplicación web de Re-Volt America a producción.}
+        \resumeItem{MongoDB}{Diseñé, implementé y desplegué modelos y relaciones de la base de datos.}
+        \resumeItem{Redis}{Reduje los tiempos de carga de servicios y vistas pesadas en un 300\% utilizando caché con Redis.}
+        \resumeItem{Sentry}{Monté Sentry para el manejo de errores lanzados por la aplicación en producción.}
+        \resumeItem{Rake}{Diseñé y, en el presente, mantengo varios flujos de trabajo de despliegue utilizando Ruby Make (Rake).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  %-----------EDUCATION-----------------
+  \section{Educación}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad del Bío-Bío}{Concepción, Chile}
+      {Ingeniería de Ejecución en Computación e Informática}{Marzo 2020 -- Enero 2024}
+  \resumeSubHeadingListEnd
+  
+ %-----------EDUCATION-----------------
+\section{Voluntariado}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {GitHub Inc.}{California, Estados Unidos}
+    {\href{https://githubcampus.expert/BGMP}{GitHub Campus Expert $\diamond$}}{2023 ---}
+    \resumeItemListStart
+      \item{Liderar una comunidad de desarrollo de software en mi universidad con el soporte de GitHub.}
+      \item{Organizar eventos promoviendo el desarrollo colaborativo abiertos a todas las carreras de mi universidad.}
+      \item{Crear espacios inclusivos y seguros para que los estudiantes compartan recursos de programación.}
+    \resumeItemListEnd
+    \resumeSubheading
+    {Mojang Studios}{Estocolmo, Suecia}
+    {\href{https://crowdin.com/profile/bgm}{Traductor y Verificador $\diamond$}}{2017 ---}
+    \resumeItemListStart
+      \item{Traducir el videojuego Minecraft a varios lenguajes como el español e inglés del Reino Unido y Australia.}
+      \item{Verificar traducciones oficiales para Minecraft y su Launcher, las cuales llegan a billones de usuarios.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Habilidades de Programación}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Lenguajes}{: C/C++, Java, Ruby, Python, Haml, Sass, TeX}
+    }
+    \item{
+      \textbf{Frameworks}{: Ruby on Rails, Jekyll, discordrb, wxPython}
+    }
+    \item{
+      \textbf{Tecnologías y Herramientas}{: Capistrano, Rake, MongoDB, Redis, Maven, Gradle, Guice, PyInstaller, Docker, Git, GitHub Actions, vsftpd}
+    }
+  \resumeSubHeadingListEnd
+
+%--------LANGUAGES------------
+\section{Idiomas}
+\resumeSubHeadingListStart
+\item{
+  \textbf{Español}{ (Nativo)}
+}
+\item{
+  \textbf{Inglés}{ (C2)}
+}
+\item{
+  \textbf{Italiano}{ (B2)}
+}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
