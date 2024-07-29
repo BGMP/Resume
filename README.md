@@ -1,5 +1,5 @@
 # Resume
-My single-page, general use resume, written in English and Spanish.
+My general use resume, written in English and Spanish.
 
 ## Preview
 <a href="https://bgm.dev/assets/resume.pdf">
