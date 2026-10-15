@@ -12,7 +12,6 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{graphicx}
-\usepackage{fontawesome}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -36,7 +35,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+	\vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -45,31 +44,41 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
+	\item\small{
+		\textbf{#1}{: #2 \vspace{-2pt}}
+	}
 }
 
 % Just in case someone needs a heading that does not need to be in a list
 \newcommand{\resumeHeading}[4]{
-    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+	\begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+% Same organisation, two consecutive roles
+\newcommand{\resumeSubheadingTwoRoles}[6]{
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+		\textit{\small#5} & \textit{\small #6} \\
+	\end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -77,146 +86,157 @@
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
-
-%----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://bgm.cl/}{\Large José Benavente}} & Email : \href{mailto:jose@bgm.cl}{jose@bgm.cl}\\
-  \href{https://bgm.cl/}{https://bgm.cl} & \includegraphics[width=3mm, height=3mm]{img/github-logo.png} \href{https://github.com/BGMP}{BGMP}\\ & \includegraphics[width=3mm, height=3mm]{img/gitlab-logo.png} \href{https://gitlab.com/BGMP}{BGMP}\\
-\end{tabular*}
-
-%-----------EXPERIENCE-----------------
-\section{Experiencia Laboral}
-\resumeSubHeadingListStart
-
-\resumeSubheading
-{Aukko}{Santiago, Chile (Remoto)}
-{Desarrollador de Software Senior}{May. 2024 -- Actualidad}
-\resumeItemListStart
-\item{Diseñé, implementé y administré la infraestructura tecnológica completa de la empresa, incluyendo servicios en Amazon Web Services (AWS), pipelines de integración y despliegue continuo (CI/CD), y la administración de GitHub a nivel organizacional.}
-\item{Definí estándares de desarrollo, optimicé procesos de ingeniería y lideré la toma de decisiones técnicas para garantizar la escalabilidad y confiabilidad de la plataforma.}
-\item{Implementé soluciones full-stack utilizando Ruby on Rails, React, PostgreSQL y APIs REST, participando en todas las etapas del ciclo de desarrollo, desde el levantamiento de requerimientos hasta el despliegue a producción.}
-\item{Desarrollé soluciones personalizadas para clientes, incluyendo scrapers en Python e integraciones con la plataforma Mercado Público de Chile, contribuyendo a la automatización de procesos y al crecimiento del negocio.}
-\item{Trabajé directamente con clientes para comprender sus necesidades, diseñar soluciones técnicas y entregar software orientado a resolver problemas reales.}
-\item{Establecí la arquitectura, los flujos de trabajo y las buenas prácticas que sirvieron como base para el crecimiento del equipo técnico.}
-\resumeItemListEnd
-
-\resumeSubheading
-{Universidad del Bío-Bío}{Concepción, Chile}
-{Profesor Part-time de Ingeniería de Software}{Abr. 2024 -- Sept. 2024}
-
-\resumeSubheading
-{Olimpiada Chilena de la Informática (OCI)}{Concepción, Chile}
-{Profesor de Programación Competitiva (C/C++)}{Abr. 2022 -- Jul. 2023}
-
-\resumeSubHeadingListEnd
-  
- %-----------VOLUNTEERING-----------------
-\section{Voluntariado}
-  \resumeSubHeadingListStart
-      \resumeSubheading
-		  {GitHub (\textnormal{\url{https://github.com}})}{California, Estados Unidos (Remoto)}
-		  {\href{https://githubcampus.expert/BGMP}{GitHub Campus Expert $\diamond$}}{Feb. 2023 ---}
-		  \resumeItemListStart
-			  \item{Fundar y liderar una comunidad de desarrollo de software en mi universidad con el apoyo de GitHub.}
-			  \item{Organizar eventos promoviendo el desarrollo colaborativo abiertos a todas las carreras de mi universidad.}
-			  \item{Crear espacios inclusivos y seguros para que los estudiantes compartan recursos de programación.}
-		  \resumeItemListEnd
-      \resumeSubheading
-		  {Re-Volt: OpenGL (\textnormal{\url{https://rvgl.org}})}{}
-		  {Desarrollador de software, miembro del equipo core de mantenedores}{Enero 2022 ---}
-		  \resumeItemListStart
-			  \resumeItem{C/C++}{Implementar correcciones de sincronización al aspecto multijugador del juego, así como también resolver errores generales reportados por su comunidad.}
-			  \resumeItem{GitHub/GitLab}{Trabajar con un equipo de desarrolladores de todas partes del mundo de manera remota para lanzar actualizaciones del juego, además de colaborar con el versionado de la base de código.}
-			  \resumeItem{mdBook}{Escribir documentación para las nuevas versiones del juego.}
-			  \item{Interactuar con la comunidad del juego de más de 5000 jugadores para así resolver bugs y agregar nuevas funcionalidades.}
-		  \resumeItemListEnd
-\resumeSubheading
-{Re-Volt America (\textnormal{\url{https://rva.lat}})}{}
-{Líder de desarrollo de software}{Mayo 2021 ---}
-\resumeItemListStart
-\resumeItem{Ruby on Rails}{Diseñar y desarrollar una aplicación para la comunidad, utilizada por miles de usuarios al mes.}
-\resumeItem{Capistrano}{Implementar flujos de trabajo con Capistrano y GitHub Actions para realizar despliegues a producción.}
-\resumeItem{Sentry}{Configurar Sentry para el monitoreo y manejo de errores de la aplicación en producción.}
-\resumeItem{Rake}{Crear y mantener flujos de trabajo de despliegue continuo utilizando Ruby Make (Rake).}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-
-   
-%-----------EDUCATION-----------------
-\section{Educación}
-\resumeSubHeadingListStart
-	\resumeSubheading
-  {Universidad del Bío-Bío}{Concepción, Chile}
-  {Magíster en Ciencias de la Computación}{Marzo 2024 -- Abril 2026}
-  \resumeSubheading
-	{Universidad del Bío-Bío}{Concepción, Chile}
-	{Ingeniería de Ejecución en Computación e Informática}{Marzo 2020 -- Enero 2024}
-\resumeSubHeadingListEnd
-
-%-----------SPEAKING-----------------
-\section{Charlas y Talleres}
-\resumeSubHeadingListStart
-  \resumeSubheading
-	  {\href{https://youtu.be/S_qkjY7k_L8?t=2698}{Contribuyendo a Open Source, una guía práctica $\diamond$}}{Santiago, Chile}
-		{Fui invitado por GitHub a dar una charla de cómo contribuir a proyectos open-source en DUOC UC.}{04/2024}
-  \resumeSubheading
-	  {\href{https://bgm.cl/about}{Git/GitHub Workshop $\diamond$}}{Concepción, Chile}
-	  {Presenté los fundamentos de Git y GitHub, junto con ejercicios prácticos para todos los asistentes.}{08/2023}
-  \resumeSubheading
-	  {\href{https://bgm.cl/about}{Ruby on Rails Workshop $\diamond$}}{Concepción, Chile}
-	  {Realicé una introducción a Ruby on Rails para el desarrollo de aplicaciones web full-stack.}{09/2023}
-\resumeSubHeadingListEnd
-
-%--------CERTIFICATIONS------------
-\section{Certificaciones}
-\resumeSubHeadingListStart
-\item{
-	\textbf{GitHub Foundations}{: \url{https://www.credly.com/badges/7cc1c714-3511-4d48-8281-8e23089fad25/public_url}}
-}
-  \item{
-  \textbf{GitHub Admin}{: \url{https://www.credly.com/badges/bc08539a-f512-4f67-9732-b3f33e8e769b/public_url}}
-}
-\resumeSubHeadingListEnd
-
-%--------PROGRAMMING SKILLS------------
-\section{Habilidades de Programación}
+	
+	%----------HEADING-----------------
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{\href{https://bgm.dev/}{\Large José Benavente}} & Email : \href{mailto:jose@bgm.cl}{jose@bgm.cl}\\
+		\href{https://bgm.dev/}{https://bgm.dev} & \includegraphics[width=3mm, height=3mm]{img/github-logo.png} \href{https://github.com/BGMP}{BGMP}\\
+		\href{https://www.linkedin.com/in/bgmp/}{linkedin.com/in/bgmp} & \includegraphics[width=3mm, height=3mm]{img/gitlab-logo.png} \href{https://gitlab.com/BGMP}{BGMP}\\
+	\end{tabular*}
+	
+	%-----------SUMMARY-----------------
+	\section{Perfil}
+	\small{Desarrollador de software senior con amplia experiencia en el mercado de compras públicas de Chile (Mercado Público / ChileCompra), trabajando con proveedores de rubros como salud, alimentos, tecnología, entre otros. Diseño y construyo de punta a punta las soluciones que les ayudan a entender y competir en este mercado, desde pipelines que procesan licitaciones y órdenes de compra hasta la clasificación automatizada de productos farmacéuticos con inteligencia artificial y plataformas de inteligencia de mercado. En paralelo, lidero el desarrollo de Re-Volt OpenGL (RVGL), la reescritura multiplataforma en C/C++ del clásico juego de carreras Re-Volt (1999).}
+	
+	%-----------EXPERIENCE-----------------
+	\section{Experiencia Laboral}
 	\resumeSubHeadingListStart
-  \item{
-    \textbf{Languages}{: C/C++, Java, Ruby, Python, PHP, Haml, Sass, TeX}
-  }
-  \item{
-    \textbf{Frameworks}{: Ruby on Rails, Liquid, wxPython, NestJS, React}
-  }
-  \item{
-    \textbf{Cloud}{: AWS, Azure, DigitalOcean}
-  }
-  \item{
-    \textbf{Technologies and Tools}{: PostgreSQL, MySQL, MongoDB, SharePoint, CloudFlare, Capistrano, Rake, Redis, Maven, Gradle, Guice, PyInstaller, Docker, Git, GitHub Actions, Sentry, Prisma ORM, Nginx, vsftpd, Airflow}
-  }
-\resumeSubHeadingListEnd
-
-%--------LANGUAGES------------
-\section{Idiomas}
-\resumeSubHeadingListStart
-\item{
-  \textbf{Español}{ (Nativo)}
-}
-\item{
-  \textbf{Inglés}{ (C2)}
-}
-\item{
-  \textbf{Italiano}{ (B2)}
-}
-\resumeSubHeadingListEnd
-
-%-------------------------------------------
+	
+	\resumeSubheading
+	{Aukko}{Santiago, Chile (Remoto)}
+	{Ingeniero de Software Líder}{Jul. 2025 -- Actualidad}
+	\resumeItemListStart
+	\item{Desarrollo sistemas de clasificación con inteligencia artificial y LLMs que extraen datos clave desde información no estructurada de compras públicas, automatizando tareas complejas para la industria farmacéutica.}
+	\item{Construyo sistemas de reportería automatizada que reemplazan procesos manuales, ahorrando muchas horas de trabajo repetitivo a otras áreas de la empresa.}
+	\item{Diseño y administro la infraestructura en AWS, los pipelines de CI/CD y los flujos de despliegue a producción.}
+	\item{Defino la arquitectura y los estándares de desarrollo de las plataformas, asegurando su confiabilidad, escalabilidad y mantenibilidad.}
+	\item{Traduzco las necesidades de los equipos comercial y de operaciones en soluciones de software concretas.}
+	\resumeItemListEnd
+	\resumeSubSubheading
+	{Desarrollador de Software Senior}{May. 2024 -- Jul. 2025}
+	\resumeItemListStart
+	\item{Construí pipelines de datos que recolectan y procesan licitaciones, cotizaciones de Compra Ágil y órdenes de compra a gran escala, integrando la API de Mercado Público en procesos automatizados y confiables.}
+	\item{Desarrollé plataformas de inteligencia de mercado que permiten a los proveedores analizar a su competencia, precios y oportunidades de negocio, con Ruby on Rails, React, PostgreSQL y Python.}
+	\item{Diseñé un sistema de clasificación de productos para el sector salud, que asocia medicamentos e insumos médicos con sus presentaciones comerciales.}
+	\item{Establecí las bases de los sistemas principales de la empresa, su arquitectura y sus flujos de desarrollo.}
+	\item{Trabajé directamente con clientes para levantar requerimientos, diseñar soluciones técnicas y entregar software listo para producción.}
+	\resumeItemListEnd
+	
+	\resumeSubheadingTwoRoles
+	{Universidad del Bío-Bío}{Concepción, Chile}
+	{Profesor Part-time de Ingeniería de Software}{Abr. 2024 -- Sept. 2024}
+	{Profesor Ayudante de Ingeniería de Software}{Ago. 2023 -- Ene. 2024}
+	
+	\resumeSubheading
+	{Olimpiada Chilena de Informática (OCI)}{Concepción, Chile}
+	{Profesor de Programación Competitiva (C/C++)}{Abr. 2022 -- Jul. 2023}
+	
+	\resumeSubHeadingListEnd
+	
+	%-----------VOLUNTEERING-----------------
+	\section{Voluntariado y Open Source}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Re-Volt: OpenGL (\textnormal{\url{https://rvgl.org}})}{Remoto}
+	{Desarrollador Líder, equipo core de mantenedores}{Ene. 2022 -- Actualidad}
+	\resumeItemListStart
+	\item{Lidero el desarrollo de RVGL, la reescritura multiplataforma en C/C++ del videojuego de carreras 3D Re-Volt (1999), que corre de forma nativa en Windows, macOS, Linux y Android.}
+	\item{Coordino de forma asincrónica a un equipo multidisciplinario de desarrolladores distribuidos en distintas partes del mundo y zonas horarias, planificando y publicando nuevas versiones del juego.}
+	\item{Desarrollo y mantengo los sistemas centrales del juego, incluyendo la física de los vehículos, el renderizado 3D con OpenGL y el multijugador en red multiplataforma de hasta 16 jugadores.}
+	\item{Implemento correcciones de sincronización en el multijugador en línea, mejorando la estabilidad de las partidas.}
+	\item{Defino los flujos de control de versiones y de lanzamiento en GitHub/GitLab, y escribo la documentación técnica de cada versión.}
+	\item{Trabajo directamente con una comunidad de más de 5000 jugadores, priorizando correcciones y nuevas funcionalidades a partir de su feedback.}
+	\resumeItemListEnd
+	\resumeSubheading
+	{GitHub Inc.}{California, Estados Unidos (Remoto)}
+	{\href{https://githubcampus.expert/BGMP}{GitHub Campus Expert $\diamond$}}{Feb. 2023 -- Actualidad}
+	\resumeItemListStart
+	\item{Lidero una comunidad de desarrollo de software que fundé en mi universidad, enfocada en difundir el concepto de open source.}
+	\item{Organizo eventos que promueven el desarrollo colaborativo, abiertos a estudiantes de todas las carreras.}
+	\item{Creo espacios inclusivos y seguros para que los estudiantes compartan recursos de programación y tecnología.}
+	\resumeItemListEnd
+	\resumeSubheading
+	{Mojang Studios (\textnormal{\href{https://crowdin.com/profile/BGM}{Crowdin}})}{Estocolmo, Suecia (Remoto)}
+	{Traductor y Corrector Voluntario}{2017 -- Actualidad}
+	\resumeItemListStart
+	\item{Mantengo las localizaciones de Minecraft y su launcher al español (Chile), inglés (Reino Unido) e inglés (Australia).}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+	
+	%-----------EDUCATION-----------------
+	\section{Educación}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Universidad del Bío-Bío}{Concepción, Chile}
+	{Magíster en Ciencias de la Computación}{Abr. 2024 -- Abr. 2026}
+	\resumeSubheading
+	{Universidad del Bío-Bío}{Concepción, Chile}
+	{Ingeniería de Ejecución en Computación e Informática}{Mar. 2020 -- Feb. 2024}
+	\resumeSubHeadingListEnd
+	
+	%-----------SPEAKING-----------------
+	\section{Charlas y Talleres}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{\href{https://youtu.be/S_qkjY7k_L8?t=2698}{Contribuyendo a Open Source, una guía práctica $\diamond$}}{Santiago, Chile}
+	{Invitado por GitHub a dar una charla sobre cómo contribuir a proyectos open source en DUOC UC.}{04/2024}
+	\resumeSubheading
+	{\href{https://bgm.dev/about}{Taller de Ruby on Rails $\diamond$}}{Concepción, Chile}
+	{Introducción a Ruby on Rails para el desarrollo de aplicaciones web full-stack.}{09/2023}
+	\resumeSubheading
+	{\href{https://bgm.dev/about}{Taller de Git/GitHub $\diamond$}}{Concepción, Chile}
+	{Fundamentos de Git y GitHub, con ejercicios prácticos para todos los asistentes.}{08/2023}
+	\resumeSubHeadingListEnd
+	
+	%--------CERTIFICATIONS------------
+	\section{Certificaciones}
+	\resumeSubHeadingListStart
+	\item{
+		\textbf{GitHub Foundations}{: \url{https://www.credly.com/badges/7cc1c714-3511-4d48-8281-8e23089fad25/public_url}}
+	}
+	\item{
+		\textbf{GitHub Administration}{: \url{https://www.credly.com/badges/bc08539a-f512-4f67-9732-b3f33e8e769b/public_url}}
+	}
+	\resumeSubHeadingListEnd
+	
+	%--------PROGRAMMING SKILLS------------
+	\section{Habilidades Técnicas}
+	\resumeSubHeadingListStart
+	\item{
+		\textbf{Lenguajes}{: Ruby, Python, SQL, C/C++, Java, PHP, Haml, Sass, TeX}
+	}
+	\item{
+		\textbf{Frameworks}{: Ruby on Rails, React, NestJS, Liquid, wxPython}
+	}
+	\item{
+		\textbf{Bases de datos}{: PostgreSQL, MySQL, MongoDB, Redis, Prisma ORM}
+	}
+	\item{
+		\textbf{Cloud y DevOps}{: AWS, Azure, DigitalOcean, Cloudflare, Docker, GitHub Actions, Capistrano, Nginx}
+	}
+	\item{
+		\textbf{Herramientas}{: Git, administración de GitHub, Sentry, Airflow, Rake, Maven, Gradle, Guice, PyInstaller, SharePoint, vsftpd}
+	}
+	\resumeSubHeadingListEnd
+	
+	%--------LANGUAGES------------
+	\section{Idiomas}
+	\resumeSubHeadingListStart
+	\item{
+		\textbf{Español}{ (Nativo)} \quad
+		\textbf{Inglés}{ (C2)} \quad
+		\textbf{Italiano}{ (B2)}
+	}
+	\resumeSubHeadingListEnd
+	
+	%-------------------------------------------
 \end{document}
